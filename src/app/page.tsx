@@ -26,7 +26,7 @@ export default async function Home() {
             <div className="container mx-auto px-4 py-12" id="products">
                 <h2 className="text-3xl font-semibold mb-8 text-center">Featured Products</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {products.map((product) => (
+                    {products.map((product:any) => (
                         <div
                             key={product.id}
                             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
