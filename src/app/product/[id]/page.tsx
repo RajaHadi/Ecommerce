@@ -59,7 +59,7 @@ export default function Product({ params }: { params: { id: string } }) {
                         {/* Product Features */}
                         <div className="mt-8">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Product Features</h3>
-                            <ul className="list-disc pl-6">
+                            <ul className="list-disc text-blue-700 pl-6">
                                 <li>Feature 1: High-quality materials</li>
                                 <li>Feature 2: Available in multiple colors</li>
                                 <li>Feature 3: 1-year warranty</li>
@@ -88,7 +88,7 @@ export default function Product({ params }: { params: { id: string } }) {
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Related Products</h3>
                             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
                                 {/* Assuming related products are fetched */}
-                                {['Product 1', 'Product 2', 'Product 3'].map((relatedProduct, index) => (
+                                {['Product 1', 'Product 2', 'Product 3', 'product 4'].map((relatedProduct, index) => (
                                     <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                                         <Image
                                         width={1000}
@@ -97,7 +97,7 @@ export default function Product({ params }: { params: { id: string } }) {
                                             alt={relatedProduct}
                                             className="h-32 w-32 object-cover rounded-lg mb-4"
                                         />
-                                        <h4 className="text-lg font-semibold">{relatedProduct}</h4>
+                                        <h4 className="text-lg font-semibold text-blue-600">{relatedProduct}</h4>
                                         <p className="text-blue-600">$49.99</p>
                                         <Link
                                             href={`/product/${index + 1}`}
